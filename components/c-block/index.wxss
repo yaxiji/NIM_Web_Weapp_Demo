@@ -1,0 +1,210 @@
+.c-block {
+  position: relative;
+  width: 690rpx;
+  height: 443rpx;
+  margin-top: 30rpx;
+  background-size: cover;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.c-block .corner {
+  position: absolute;
+  top: 20rpx;
+  right: 30rpx;
+  height: 36rpx;
+  background: #000000;
+  border-radius: 5rpx;
+}
+.c-block .corner text {
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-size: 24rpx;
+  font-family: D-DIN;
+  font-weight: 400;
+  color: #FFFFFF;
+  padding-left: 28rpx;
+  padding-right: 8rpx;
+  line-height: 36rpx;
+  background-image: url('https://ugc.hitv.com/platform_oss/4073C73C0CA840D8AEE1C4422D5D09E1.png');
+  background-repeat: no-repeat;
+  background-size: 14rpx 20rpx;
+  background-position: 8rpx center;
+}
+.c-block .bottom {
+  position: absolute;
+  width: 630rpx;
+  bottom: 30rpx;
+  left: 30rpx;
+}
+.c-block .bottom .tit {
+  font-size: 36rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.c-block .bottom .score {
+  position: relative;
+  width: 92rpx;
+  height: 40rpx;
+  margin-top: 15rpx;
+}
+.c-block .bottom .score .star {
+  position: absolute;
+  width: 100%;
+  height: 19rpx;
+  top: 0;
+  left: 0;
+  background-size: 19rpx 19rpx;
+}
+.c-block .bottom .score .star.gray {
+  background-image: url('https://ugc.hitv.com/platform_oss/0CAAABFC63E84964AD6A87431BC07CFA.png');
+}
+.c-block .bottom .score .star.yellow {
+  width: 50%;
+  background-image: url('https://ugc.hitv.com/platform_oss/686D397E93104DD6A8998EDDF2AB4731.png');
+}
+.c-block .bottom .score text {
+  position: absolute;
+  left: 102rpx;
+  top: -10rpx;
+  font-size: 26rpx;
+  font-family: D-DIN;
+  font-weight: bold;
+  color: #FCDB4D;
+}
+.c-block .bottom .theme .t-info {
+  float: left;
+  width: 272rpx;
+  height: 122rpx;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 0 15rpx 15rpx 15rpx;
+  margin-right: 10rpx;
+  overflow: hidden;
+}
+.c-block .bottom .theme .t-info text {
+  display: block;
+  font-family: PingFang SC;
+  padding-left: 20rpx;
+}
+.c-block .bottom .theme .t-num {
+  width: 66rpx;
+  height: 122rpx;
+  float: left;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 0 15rpx 15rpx 15rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c-block .bottom .theme .t-num text {
+  font-size: 26rpx;
+  font-family: D-DIN;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.4);
+}
+.c-block .bottom .t-info-tit {
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding-top: 10rpx;
+}
+.c-block .bottom .bookinfo {
+  font-size: 20rpx;
+  font-family: D-DIN;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.4);
+}
+.c-block .bottom .price {
+  width: 100%;
+  height: 36rpx;
+}
+.c-block .bottom .price text {
+  float: left;
+  font-size: 20rpx;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.4);
+}
+.c-block .bottom .price .num {
+  font-size: 24rpx;
+  font-family: D-DIN;
+  color: #FCDB4D;
+}
+.c-block .bottom .price text.stxt {
+  line-height: 36rpx;
+  padding-left: 10rpx;
+}
+.c-block .bottom .t-merchant-info {
+  width: 100%;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+}
+.c-block .bottom .t-merchant-info .score {
+  margin-top: 18rpx;
+  margin-left: 10rpx;
+}
+.c-block .bottom .t-merchant-info .bookinfo {
+  padding-left: 40rpx;
+  color: #FFFFFF;
+}
+.c-block .bottom .t-info-tag {
+  display: block;
+  height: 28rpx;
+  background: rgba(47, 35, 86, 0);
+  border: 2rpx solid #6DE0BB;
+  border-radius: 5rpx;
+  font-size: 20rpx;
+  font-weight: 500;
+  color: #6DE0BB;
+  text-align: center;
+  margin-right: 10rpx;
+  padding: 5rpx 10rpx;
+  line-height: 28rpx;
+  display: flex;
+  flex-direction: column;
+}
+.c-block .bottom .t-merchant {
+  width: 630rpx;
+  height: 96rpx;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 0 15rpx 15rpx 15rpx;
+  margin-top: 15rpx;
+}
+.c-block .bottom .t-merchant .line {
+  padding: 0 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.c-block .bottom .t-merchant .line .distance {
+  display: block;
+  float: right;
+  font-size: 22rpx;
+  font-family: D-DIN;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.4);
+}
+.c-block .bottom .t-merchant .price {
+  padding-left: 20rpx;
+}
+.c-block .bottom .t-merchant .score {
+  margin-left: 16rpx;
+  margin-top: 20rpx;
+}
+.c-block .bottom .t-merchant .bookinfo {
+  display: block;
+  margin-left: 46rpx;
+  color: #FFFFFF;
+}
+.c-block .mask {
+  position: absolute;
+  width: 690rpx;
+  height: 443rpx;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(51, 27, 101, 0), rgba(51, 27, 101, 0.8));
+  background-image: url('https://ugc.hitv.com/platform_oss/D4D6604B96114777A95B7987B98AA61E.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

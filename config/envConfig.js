@@ -10,7 +10,8 @@ console.warn('|||||||||||||||||||||||||||||||||||||')
 // 需要注释掉im.js文件中”onpushevents: this.onPushEvents“这一行以及onFriends回调中subscribeEvent方法。
 let configMap = {
     test: {
-      appkey: 'fe416640c8e8a72734219e1847ad2547',
+      // appkey: 'fe416640c8e8a72734219e1847ad2547',
+      appkey: '7a6a49ab29e6b3e9f57386c7c1df9a73',
       url: 'https://apptest.netease.im'
     },
     pre: {
@@ -18,13 +19,14 @@ let configMap = {
       url: 'http://preapp.netease.im:8184'
     },
     online: {
-      appkey: '45c6af3c98409b18a84451215d0bdd6e',
+      // appkey: '45c6af3c98409b18a84451215d0bdd6e',
+      appkey: '7a6a49ab29e6b3e9f57386c7c1df9a73',
       url: 'https://app.netease.im'
     },
 };
 ENVIRONMENT_CONFIG = configMap[envir];
 // 是否开启订阅服务
-ENVIRONMENT_CONFIG.openSubscription = true
+ENVIRONMENT_CONFIG.openSubscription = false
 ENVIRONMENT_CONFIG.privateConf = {
   "lbs_web": "http://59.111.108.145:8281/lbs/webconf.jsp",
   "link_ssl_web": false,

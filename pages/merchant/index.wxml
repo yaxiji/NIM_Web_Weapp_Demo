@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="p-merchant {{selectType ? 'fixed' : ''}}">
+  <nav-bar bindtap="switchToChating"/>
+  <view class="m-content">
+    <c-title navType="{{navType}}" bind:changePop="changePop" bind:changeNav="changeNav"/>
+    <!--门店-->
+    <scroll-view class="scroll-block" scroll-y="true" wx:if="{{navType==1}}">
+      <c-block wx:for="{{merchantMockData}}" wx:for-index="idx" wx:for-item="item" info="{{item}}" navType="{{navType}}"/>
+    </scroll-view>
+    <!--主题-->
+    <scroll-view class="scroll-block" scroll-y="true" wx:if="{{navType==2}}">
+      <c-block wx:for="{{themeMockData}}" wx:for-index="idx" wx:for-item="item" info="{{item}}" navType="{{navType}}"/>
+    </scroll-view>
+
+    <tab-bar tabIndex="{{tabIndex}}" ></tab-bar>
+  </view>
+  <c-pop selectType="{{selectType}}" bind:changePop="changePop"/>
+</view>

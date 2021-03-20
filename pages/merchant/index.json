@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "nav-bar": "../../components/nav-bar/index",
+    "c-title": "../../components/c-title/index",
+    "c-block": "../../components/c-block/index",
+    "c-pop": "../../components/c-pop/index",
+    "tab-bar": "../../components/tab-bar/index"
+  }
+}

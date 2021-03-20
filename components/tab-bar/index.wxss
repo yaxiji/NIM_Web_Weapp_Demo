@@ -1,0 +1,31 @@
+.c-tab-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  padding-bottom: env(safe-area-inset-bottom);
+  width: 750rpx;
+  height: 120rpx;
+  background: #261B40;
+  border-radius: 55rpx;
+}
+.tab-bar-item {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tab-bar-item cover-image {
+  width: 36rpx;
+  height: 36rpx;
+}
+.tab-bar-item cover-view {
+  font-size: 22rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #A5A8C2;
+  padding-top: 14rpx;
+}

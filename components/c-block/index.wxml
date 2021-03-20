@@ -1,0 +1,42 @@
+<view class="c-block" style="background-image:url({{info.cover}})">
+  <view class="mask"></view>
+  <view class="corner" wx:if="{{navType==1}}"><text>{{info.distance}}km</text></view>
+  <view class="bottom">
+    <text class="tit">{{info.title}}</text>
+    <!--门店-->
+    <view wx:if="{{navType==1}}">
+      <view class="score" wx:if="{{info.score}}">
+        <view class="gray star"></view>
+        <view class="yellow star" style="width:{{info.score/10*100}}%"></view>
+        <text>{{info.score}}</text>
+      </view>
+      <view class="theme" wx:if="{{info.scripts && info.scripts.content}}">
+        <view class="t-info" wx:for="{{info.scripts.content}}" wx:for-index="idx" wx:for-item="item" wx:if="{{idx<2}}">
+          <text class="t-info-tit">{{item.title}}</text>
+          <text class="bookinfo">{{item.people_min}}-{{item.people_max}}人 | {{item.duration}}分钟</text>
+          <view class="price"><text class="num">¥{{item.price}}</text><text class="stxt">起</text></view>
+        </view>
+        <view class="t-num"><text>+{{info.scripts.count}}</text></view>
+      </view>
+    </view>
+    <!--主题-->
+    <view wx:if="{{navType==2}}" class="merchant">
+      <view class="t-merchant-info">
+        <text class="t-info-tag" wx:for="{{info.tags}}">{{item}}</text>
+        <view class="score" wx:if="{{info.score}}">
+          <view class="gray star"></view>
+          <view class="yellow star" style="width:{{info.score/10*100}}%"></view>
+          <text>{{info.score}}</text>
+        </view>
+        <text class="bookinfo">{{info.people_min}}-{{info.people_max}}人 | {{info.duration}}分钟</text>
+      </view>
+      <view class="t-merchant">
+        <view class="line">
+          <text class="t-info-tit">{{info.merchant.merchant_name}}</text>
+          <text class="distance">{{info.merchant.distance}}km</text>
+        </view>
+        <view class="price"><text class="num">¥{{info.merchant.price}}</text><text class="stxt">起</text></view>
+      </view>
+    </view>
+  </view>
+</view>

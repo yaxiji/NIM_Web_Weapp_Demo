@@ -1,0 +1,24 @@
+.c-nav {
+  height: 60rpx;
+  margin-left: 30rpx;
+}
+.c-nav .txt {
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #A5A8C2;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.c-nav .txt::after {
+  display: inline-block;
+  bottom: 22rpx;
+  right: 0;
+  width: 0;
+  height: 5rpx;
+  border-top: 10rpx solid #A5A8C2;
+  border-left: 8rpx solid transparent;
+  border-right: 8rpx solid transparent;
+  content: '';
+  margin-left: 10rpx;
+}

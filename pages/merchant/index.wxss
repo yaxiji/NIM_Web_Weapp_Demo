@@ -1,0 +1,101 @@
+.p-merchant {
+  width: 100%;
+  background-image: url('https://ugc.hitv.com/platform_oss/BC89228EFD3145C59EF3F332BAC27F86.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #120432;
+  min-height: 100vh;
+}
+.p-merchant .m-content {
+  padding: 30rpx;
+}
+.p-merchant .m-content .m-title {
+  width: 100%;
+  height: 100rpx;
+  margin: 20rpx 0;
+}
+.p-merchant .m-content .m-title text {
+  display: inline-block;
+  height: 80rpx;
+  font-size: 42rpx;
+  font-family: FZ-CY;
+  font-weight: 400;
+  color: #ffffff;
+  padding-right: 60rpx;
+}
+.p-merchant .m-content .m-title text.on {
+  position: relative;
+  color: #FCDB4D;
+}
+.p-merchant .m-content .m-title .on::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 22rpx;
+  height: 8rpx;
+  border-radius: 4rpx;
+  margin-left: -40rpx;
+  background-color: #FCDB4D;
+  content: '';
+}
+.p-merchant .m-content .m-select {
+  margin-right: -30rpx;
+  overflow: hidden;
+}
+.p-merchant .m-content .m-select .btn {
+  float: left;
+  width: 140rpx;
+  height: 60rpx;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px 10px 0px 10px;
+  margin-right: 15rpx;
+}
+.p-merchant .m-content .m-select .btn text {
+  position: relative;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #A5A8C2;
+  padding-left: 40rpx;
+}
+.p-merchant .m-content .m-select .btn text::after {
+  position: absolute;
+  top: 14rpx;
+  right: -20rpx;
+  width: 0;
+  height: 0;
+  border-top: 10rpx solid #A5A8C2;
+  border-left: 8rpx solid transparent;
+  border-right: 8rpx solid transparent;
+  content: '';
+}
+.p-merchant .m-content .m-select .btn.on {
+  background: #FCDB4D;
+}
+.p-merchant .m-content .m-select .btn.on text {
+  color: #120432;
+}
+.p-merchant .m-content .m-select .btn.on text::after {
+  border-top: 10rpx solid #120432;
+}
+.p-merchant .m-content .m-select .search {
+  display: flex;
+  float: left;
+  width: 96rpx;
+  height: 60rpx;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.p-merchant .m-content .m-select .search text {
+  display: block;
+  width: 30rpx;
+  height: 28rpx;
+  background-image: url(https://ugc.hitv.com/platform_oss/744AB9C6906E4FC5A26E971842D94A92.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.p-merchant .m-content .scroll-block {
+  margin-bottom: 120rpx;
+}

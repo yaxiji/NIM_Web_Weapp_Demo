@@ -13,9 +13,9 @@ export default class IMController {
   constructor(headers) {
     app.globalData.nim = NIM.getInstance({
       // 初始化SDk
-      // debug: true,
+      debug: true,
       appKey: app.globalData.ENVIRONMENT_CONFIG.appkey,
-      token: MD5(headers.token),
+      token: headers.token, //MD5(headers.token),
       account: headers.account,
       promise: true,
       transports: ['websocket'],
@@ -74,7 +74,7 @@ export default class IMController {
       onbroadcastmsg: this.onBroadcastMsg,
       onbroadcastmsgs: this.onBroadcastMsgs,
       // 事件订阅
-      onpushevents: this.onPushEvents,
+      // onpushevents: this.onPushEvents,
     })
     // 发送消息开始登陆
     store.dispatch({

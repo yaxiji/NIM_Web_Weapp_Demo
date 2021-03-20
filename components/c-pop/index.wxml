@@ -1,0 +1,56 @@
+<view class="c-poup" wx:if="{{selectType}}">
+      <view class="mask" style="height:{{selectType==1?'60%':'70%'}}">
+        <view class="close" style="top:{{selectType==1?'40%':'46%'}}" bindtap="closePop"></view>
+      </view>
+      <view class="search" wx:if="{{selectType==1}}">
+        <input  placeholder="请输入街道、大厦或小区名称" confirm-type="search" placeholder-class="placeholder"/>
+      </view>
+      <view class="location" wx:if="{{selectType==1}}">
+          <view class="left">
+            <text class="on">热门商圈</text>
+            <text>附近</text>
+            <text>行政区/商圈</text>
+          </view>
+    
+          <scroll-view class="right"  scroll-y="true">
+            <view class="area">
+              <text class="name">芙蓉区</text><text class="up">全部</text>
+            </view>
+            <view class="tag"><text class="on">德思勤五一广场城...</text></view>
+            <view class="tag"><text>五一广场</text></view>
+            <view class="tag"><text>月亮岛</text></view>
+            <view class="tag"><text>喜盈门/西...</text></view>
+            <view class="tag"><text>月亮岛</text></view>
+            <view class="tag"><text>月亮岛</text></view>
+            <view class="area">
+              <text class="name">芙蓉区</text><text class="down">收起</text>
+            </view>
+            <view class="tag"><text>五一广场五一广场五一广场</text></view>
+            <view class="tag"> <text class="on">五一广场</text></view>
+            <view class="tag"><text>月亮岛</text></view>
+             <view class="tag"><text>五一广场五一广场五一广场</text></view>
+            <view class="tag"> <text class="on">五一广场</text></view>
+            <view class="tag"><text>月亮岛</text></view>
+          </scroll-view>
+      </view>
+      <view class="t-price order" wx:if="{{selectType==2}}">
+          <view class="tag"><text>离我最近</text></view>
+          <view class="tag"><text class="on">好评优先</text></view>
+          <view class="tag"> <text>人均最高</text></view>
+          <view class="tag"><text>人均最低</text></view>
+          <view class="tag"><text>智能排序</text></view>
+      </view>
+
+      <view class="t-price label" wx:if="{{selectType==3}}">
+          <view class="tag"><text>恐怖</text></view>
+          <view class="tag"><text class="on">中级悬疑</text></view>
+          <view class="tag"> <text>困难三星</text></view>
+          <view class="tag"><text>浪漫</text></view>
+          <view class="tag"><text>亲情</text></view>
+          <view class="tag"><text>蠢蠢欲动</text></view>
+          <view class="tag"><text>中级悬疑</text></view>
+          <view class="tag"><text>困难三星</text></view>
+          <view class="tag"><text>亲情</text></view>
+          <view class="tag"><text>蠢蠢欲动</text></view>
+      </view>
+    </view>

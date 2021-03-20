@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/merchant/index",
     "pages/login/login",
     "pages/register/register",
     "pages/recentchat/recentchat",
@@ -30,33 +31,12 @@
     "partials/videoCallMeeting/videoCallMeeting"
   ],
   "window": {
-    "backgroundColor": "#f0f0f0",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "云信DEMO",
-    "navigationBarTextStyle": "black"
+    "navigationStyle": "custom"
   },
-  "tabBar": {
-    "selectedColor": "#378aff",
-    "backgroundColor": "#fff",
-    "list": [
-      {
-        "pagePath": "pages/recentchat/recentchat",
-        "text": "云信",
-        "iconPath": "images/yunxin1.png",
-        "selectedIconPath": "images/yunxin2.png"
-      },
-      {
-        "pagePath": "pages/contact/contact",
-        "text": "通信录",
-        "iconPath": "images/contact1.png",
-        "selectedIconPath": "images/contact2.png"
-      },
-      {
-        "pagePath": "pages/setting/setting",
-        "text": "我的",
-        "iconPath": "images/setting1.png",
-        "selectedIconPath": "images/setting2.png"
-      }
-    ]
-  }
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于小程序定位"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
 }

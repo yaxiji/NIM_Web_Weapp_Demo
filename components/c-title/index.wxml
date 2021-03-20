@@ -1,0 +1,18 @@
+<view class="c-title">
+    <view class="m-title">
+      <text class="{{navType==1 ? 'on' : ''}}" data-type="1" bindtap="changeNav">门店</text>
+      <text class="{{navType==2 ? 'on' : ''}}" data-type="2" bindtap="changeNav">主题</text>
+      <text class="{{navType==3 ? 'on' : ''}}" data-type="3" bindtap="changeNav">组队</text>
+    </view>
+    <view class="m-search">
+      <input placeholder="请输入街道、大厦或小区名称" confirm-type="search" placeholder-class="placeholder"/>
+      <text class="icon" catchtap="handleSearch"></text>
+    </view>
+    <view class="m-select">
+      <view class="btn on" bindtap="openPop" data-type="1"><text>全城</text></view>
+      <view class="btn" bindtap="openPop" data-type="2"><text>排序</text></view>
+      <view class="btn" bindtap="openPop" data-type="2"><text>价格</text></view>
+      <view class="btn" bindtap="openPop" data-type="3"><text>风格</text></view>
+      <!-- <view class="search"><text></text></view> -->
+    </view>
+</view>

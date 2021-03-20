@@ -1,0 +1,101 @@
+.c-title .m-title {
+  width: 100%;
+  height: 100rpx;
+  margin: 20rpx 0;
+}
+.c-title .m-title text {
+  display: inline-block;
+  height: 80rpx;
+  font-size: 42rpx;
+  font-family: FZ-CY;
+  font-weight: 400;
+  color: #ffffff;
+  padding-right: 60rpx;
+}
+.c-title .m-title text.on {
+  position: relative;
+  color: #FCDB4D;
+}
+.c-title .m-title .on::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 22rpx;
+  height: 8rpx;
+  border-radius: 4rpx;
+  margin-left: -40rpx;
+  background-color: #FCDB4D;
+  content: '';
+}
+.c-title .m-search {
+  position: relative;
+  margin-bottom: 20rpx;
+  width: 690rpx;
+  height: 72rpx;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10rpx;
+  background-image: url(https://ugc.hitv.com/platform_oss/744AB9C6906E4FC5A26E971842D94A92.png);
+  background-repeat: no-repeat;
+  background-size: 30rpx 28rpx;
+  background-position: 620rpx center;
+}
+.c-title .m-search input {
+  padding-left: 20rpx;
+  width: 600rpx;
+  height: 72rpx;
+  color: #A5A8C2;
+  font-size: 24rpx;
+}
+.c-title .m-search .icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 90rpx;
+  height: 72rpx;
+  z-index: 2;
+}
+.c-title .placeholder {
+  font-size: 24rpx;
+  color: #A5A8C2;
+}
+.c-title .m-select {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+.c-title .m-select .btn {
+  width: 160rpx;
+  height: 60rpx;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px 10px 0px 10px;
+}
+.c-title .m-select .btn text {
+  position: relative;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #A5A8C2;
+  padding-left: 40rpx;
+}
+.c-title .m-select .btn text::after {
+  position: absolute;
+  top: 14rpx;
+  right: -24rpx;
+  width: 0;
+  height: 0;
+  border-top: 10rpx solid #A5A8C2;
+  border-left: 8rpx solid transparent;
+  border-right: 8rpx solid transparent;
+  content: '';
+}
+.c-title .m-select .btn.on {
+  background: #FCDB4D;
+}
+.c-title .m-select .btn.on text {
+  color: #120432;
+}
+.c-title .m-select .btn.on text::after {
+  border-top: 10rpx solid #120432;
+}

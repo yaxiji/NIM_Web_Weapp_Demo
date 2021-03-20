@@ -1,0 +1,3 @@
+<view class="c-nav" style="padding-top:{{barHeight}}px;">
+    <text class="txt">{{curCity}}</text>
+</view>
